@@ -89,7 +89,6 @@ module.exports = yeoman.generators.Base.extend({
             this.fs.copyTpl(
                 this.templatePath('./_server/_config/_config.js'),
                 this.destinationPath('./server/config/config.js'), {
-                    name: this.props.name,
                     dbName: this.props.dbName
                 }
                 );
