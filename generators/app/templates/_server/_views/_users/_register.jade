@@ -1,0 +1,25 @@
+extends ../shared/layout
+
+block main-content
+	.container
+		.col-md-6.col-md-offset-3
+			.well
+				form(method="post", action="", class='form-horizontal')
+					fieldset
+						legend Register
+						.form-group
+							label(for="username", class='col-md-2 control-label') Username
+							.col-md-10
+								input(id="username" class="form-control" type="text" name="username" placeholder="Username")
+						.form-group
+							label(for="password", class='col-md-2 control-label') Password
+							.col-md-10
+								input(id="password" class="form-control" type="password" name="password" placeholder="Password")
+						.form-group
+							label(for="confirmPassword", class='col-md-2 control-label') Confirm Password
+							.col-md-10
+								input(id="confirmPassword" class="form-control" type="password" name="confirmPassword" placeholder="Confirm Password")
+						.form-group
+							col-md-10.col-md-offset-2
+								button(type="reset" class="btn btn-default") Cancel
+								button(type="submit" class="btn btn-primary") Register
