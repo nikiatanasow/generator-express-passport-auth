@@ -121,7 +121,7 @@ module.exports = yeoman.generators.Base.extend({
 
             this.fs.copy(
                 this.templatePath('./_server/_controllers/_usersController.js'),
-                this.destinationPath('./server/controllers/usersController.js')
+                this.destinationPath('./server/controllers/UsersController.js')
                 ); 
             
             // data
